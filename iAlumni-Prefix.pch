@@ -1,0 +1,35 @@
+//
+// Prefix header for all source files of the 'iAlumni' target in the 'iAlumni' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+// Not Print Log
+//#ifdef __OPTIMIZE__
+//#define NSLog(...) 
+//#endif
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+  #import <CoreData/CoreData.h>
+  #import "WXWConstants.h"
+  #import "WXWTextPool.h"
+  #import "WXWCommonUtils.h"
+  #import "WXWSystemInfoManager.h"
+  #import "WXWImageManager.h"
+  #import "WXWCoreDataUtils.h"
+  #import "TextConstants.h"
+  #import "GlobalConstants.h"
+  #import "iAlumniAppDelegate.h"
+#endif
+
+
+// 动态获取设备参数SCREEN_WIDTH
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+

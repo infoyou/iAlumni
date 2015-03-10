@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AD" representedClassName="AD" syncable="YES">
+        <attribute name="adId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AlbumPhoto" representedClassName="AlbumPhoto" syncable="YES">
+        <attribute name="authorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="welfare" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Welfare" inverseName="imageList" inverseEntity="Welfare" syncable="YES"/>
+    </entity>
+    <entity name="Alumni" representedClassName="Alumni" syncable="YES">
+        <attribute name="allKnownAlumniCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="bySearch" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="classGroupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyAddressC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyAddressE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCountryC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCountryE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyProvince" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="containerType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feePaid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeToPay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstNamePinyinChar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasApplied" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAdmin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isApprove" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCheckIn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLastMessageFromSelf" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isMember" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="joinedGroupCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastSignInTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memberLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notReadMsgCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="payDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="platInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationshipType" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="shakePlace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shakeThing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sina" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tableInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weixin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="withMeConnectionCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="welfare" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Welfare" inverseName="salesUserList" inverseEntity="Welfare" syncable="YES"/>
+    </entity>
+    <entity name="AlumniDetail" representedClassName="AlumniDetail" syncable="YES">
+        <attribute name="classGroupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyAddressC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyAddressE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCountryC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCountryE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyProvince" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="containerType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAdmin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isApprove" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCheckIn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isMember" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="personId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sina" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weixin" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AlumniFounder" representedClassName="AlumniFounder" parentEntity="Alumni" syncable="YES">
+        <attribute name="brandId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AlumniWithMeLink" representedClassName="AlumniWithMeLink" syncable="YES">
+        <attribute name="classificationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classificationType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="linkId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="linkName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AttractiveAlumni" representedClassName="AttractiveAlumni" parentEntity="Alumni" syncable="YES"/>
+    <entity name="Award" representedClassName="Award" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="experienceTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="experienceUnitValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="memberId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pointUnitValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Brand" representedClassName="Brand" syncable="YES">
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="engName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latestComment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommentBranchName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommentElapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommenterId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="latestCommenterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommentTimestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nearestDistance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brandAlumnus" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Alumni" syncable="YES"/>
+    </entity>
+    <entity name="Chat" representedClassName="Chat" syncable="YES">
+        <attribute name="chartId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isWrite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="msg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orders" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="readTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="CheckedinItemId" representedClassName="CheckedinItemId" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="checkedinBy" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="CheckedinMember" inverseName="checkedinItemIds" inverseEntity="CheckedinMember" syncable="YES"/>
+    </entity>
+    <entity name="CheckedinMember" representedClassName="CheckedinMember" parentEntity="Member" syncable="YES">
+        <attribute name="elapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="checkedinItemIds" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CheckedinItemId" inverseName="checkedinBy" inverseEntity="CheckedinItemId" syncable="YES"/>
+    </entity>
+    <entity name="ClassGroup" representedClassName="ClassGroup" syncable="YES">
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnCourse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enCourse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Club" representedClassName="Club" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="allowJoin" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="allowPost" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="allowQuit" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="badgeNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="baseInfoData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="clubId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="clubName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forbidJoinReason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forbidPostReason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forbidQuitReason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostSupTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="member" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="needPay" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="postAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postInfoContentData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="postNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="usageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ClubDetail" representedClassName="ClubDetail" syncable="YES">
+        <attribute name="change" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailDescUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventcount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="feesValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hostSupTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ifadmin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ifmember" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isWrite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="managerMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="membercount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="memberShipInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newPostCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="payNextTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payOrderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skuMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skuPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sponsorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weibo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ClubSimple" representedClassName="ClubSimple" syncable="YES">
+        <attribute name="clubId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventcount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ifadmin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ifmember" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastEventNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="membercount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newEventNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userPaid" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userPayDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
+        <attribute name="authorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPicUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="commentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="ComposerPlace" representedClassName="ComposerPlace" syncable="YES">
+        <attribute name="centerItemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="ComposerTag" representedClassName="ComposerTag" syncable="YES">
+        <attribute name="highlight" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tagId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="countryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="CouponItem" representedClassName="CouponItem" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reducedPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="savings" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceItemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="serviceItem" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceItem" inverseName="couponInfos" inverseEntity="ServiceItem" syncable="YES"/>
+    </entity>
+    <entity name="Distance" representedClassName="Distance" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="valueFloat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="valueString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="actionStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actionType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="actualPaid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="backerCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkinNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinResultType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCategory" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="fake" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fee" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hasAward" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasSignedUp" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostSubTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostTypeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intervalDayCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="languageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latestPostContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestPostElapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestPoster" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestPostTimestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="membershipScope" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthDayInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthWeekInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="needSignUp" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payOrderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="requirementType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="screenType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="showOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="signupCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="signupMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skuMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sponsorMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyEditable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tableInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winnerCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="winnerMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="skus" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sku" syncable="YES"/>
+    </entity>
+    <entity name="EventCheckinAlumni" representedClassName="EventCheckinAlumni" parentEntity="Alumni" syncable="YES">
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EventCity" representedClassName="EventCity" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EventSignedUpAlumni" representedClassName="EventSignedUpAlumni" parentEntity="Alumni" syncable="YES">
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EventSponsor" representedClassName="EventSponsor" syncable="YES">
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="fee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sponsorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EventTopic" representedClassName="EventTopic" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sequenceNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="topicId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="voted" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="EventWinner" representedClassName="EventWinner" parentEntity="Alumni" syncable="YES">
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FavoritedMember" representedClassName="FavoritedMember" parentEntity="Member" syncable="YES">
+        <attribute name="favoritedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FavoritedPost" representedClassName="FavoritedPost" syncable="YES">
+        <attribute name="favoritedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FavoritedServiceItem" representedClassName="FavoritedServiceItem" parentEntity="ServiceItem" syncable="YES">
+        <attribute name="favoritedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Feedback" representedClassName="Feedback" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sampleMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FilterOption" representedClassName="FilterOption" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="valueFloat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="valueString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HomeGroup" representedClassName="HomeGroup" syncable="YES">
+        <attribute name="groupId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Industry" representedClassName="Industry" syncable="YES">
+        <attribute name="cnName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="industryId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Invitee" representedClassName="Invitee" syncable="YES">
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="invited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="joined" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="snsUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="years" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ItemGroup" representedClassName="ItemGroup" syncable="YES">
+        <attribute name="firstTipsTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="usageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ItemGroups" representedClassName="ItemGroups" syncable="YES">
+        <attribute name="groupId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="JoinedGroup" representedClassName="JoinedGroup" parentEntity="Club" syncable="YES">
+        <attribute name="alumniId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="KnownAlumni" representedClassName="KnownAlumni" parentEntity="Alumni" syncable="YES">
+        <attribute name="classmate" optional="YES" attributeType="Integer 32" syncable="YES"/>
+    </entity>
+    <entity name="LikedItemId" representedClassName="LikedItemId" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Liker" inverseName="likedItemIds" inverseEntity="Liker" syncable="YES"/>
+    </entity>
+    <entity name="Liker" representedClassName="Liker" parentEntity="Member" syncable="YES">
+        <relationship name="likedItemIds" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LikedItemId" inverseName="likedBy" inverseEntity="LikedItemId" syncable="YES"/>
+    </entity>
+    <entity name="Member" representedClassName="Member" syncable="YES">
+        <attribute name="answerCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="awardDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bigPhotoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="commentPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookPostCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="favoriteCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="feedCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="feedPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="industry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invitationDonePoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="invitationPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="likeItems" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="linkedinPostCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="memberId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="okInvitationCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="personId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sentInvitationCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitterPostCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="years" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Messages" representedClassName="Messages" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentDone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="quickViewed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="reviewed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NameCard" representedClassName="NameCard" parentEntity="Alumni" syncable="YES">
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="News" representedClassName="News" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateSeparator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drawnFrom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="elapsedDayCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newsId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="originalImageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="originalImageWidth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Option" representedClassName="Option" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optionId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="topicId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PhoneNumber" representedClassName="PhoneNumber" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceItem" inverseName="phoneNumbers" inverseEntity="ServiceItem" syncable="YES"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceProvider" inverseName="phoneNumbers" inverseEntity="ServiceProvider" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName="Place" syncable="YES">
+        <attribute name="centerItemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="PointItem" representedClassName="PointItem" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="experienceTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="experienceUnitValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="memberId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pointUnitValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES">
+        <attribute name="approved" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="authorId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPicUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couldBeDeleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hot" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isHaveSurvey" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSmsInform" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastCommentTimestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="locationAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="originalImageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="originalImageWidth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="place" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="postType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="surveyResultUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagNames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userIsAnswered" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="PostComment" representedClassName="PostComment" syncable="YES">
+        <attribute name="authorId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPicUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couldBeDeleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="showOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="RecommendAlumni" representedClassName="RecommendAlumni" parentEntity="Alumni" syncable="YES">
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ReferenceRelationship" inverseName="reference" inverseEntity="ReferenceRelationship" syncable="YES"/>
+    </entity>
+    <entity name="RecommendedItem" representedClassName="RecommendedItem" syncable="YES">
+        <attribute name="cnName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="serviceItemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="serviceItem" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceItem" inverseName="recommendedItems" inverseEntity="ServiceItem" syncable="YES"/>
+    </entity>
+    <entity name="ReferenceRelationship" representedClassName="ReferenceRelationship" syncable="YES">
+        <attribute name="endAlumniId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="referenceId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="startAlumniId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="reference" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RecommendAlumni" inverseName="links" inverseEntity="RecommendAlumni" syncable="YES"/>
+    </entity>
+    <entity name="RelationshipLink" representedClassName="RelationshipLink" syncable="YES">
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="linkId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="referenceAvatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referenceId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="referenceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referenceType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="withMeEvent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="withTargetEvent" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Report" representedClassName="Report" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="languageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="newsId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="readCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SearchKeyword" representedClassName="SearchKeyword" syncable="YES">
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="ServiceItem" representedClassName="ServiceItem" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkedin" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="checkinCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasCoupon" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasLink" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasRecommendedItem" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasServiceProvider" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasTransit" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="headerParamName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headerParamValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hot" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastCommentTimestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latestComment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommentElapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latestCommenterId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="latestCommenterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latlagAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="myCountryLikeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="providerId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="providerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendedItemNames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagNames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transit" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="couponInfos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CouponItem" inverseName="serviceItem" inverseEntity="CouponItem" syncable="YES"/>
+        <relationship name="phoneNumbers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhoneNumber" inverseName="item" inverseEntity="PhoneNumber" syncable="YES"/>
+        <relationship name="recommendedItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecommendedItem" inverseName="serviceItem" inverseEntity="RecommendedItem" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ServiceItemSection" inverseName="serviceItem" inverseEntity="ServiceItemSection" syncable="YES"/>
+    </entity>
+    <entity name="ServiceItemSection" representedClassName="ServiceItemSection" syncable="YES">
+        <attribute name="cellCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cellList" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasSpecialParams" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sectionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="serviceItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceItem" inverseName="sections" inverseEntity="ServiceItem" syncable="YES"/>
+        <relationship name="specialParams" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ServiceItemSectionParam" inverseName="section" inverseEntity="ServiceItemSectionParam" syncable="YES"/>
+    </entity>
+    <entity name="ServiceItemSectionParam" representedClassName="ServiceItemSectionParam" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortKey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="section" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceItemSection" inverseName="specialParams" inverseEntity="ServiceItemSection" syncable="YES"/>
+    </entity>
+    <entity name="ServiceProvider" representedClassName="ServiceProvider" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnAddressPart3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasLink" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasTransit" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latlagAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="spId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="spName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transit" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="phoneNumbers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhoneNumber" inverseName="provider" inverseEntity="PhoneNumber" syncable="YES"/>
+    </entity>
+    <entity name="Shake" representedClassName="Shake" syncable="YES">
+        <attribute name="defaultPlace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defaultThing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="places" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="things" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SharePost" representedClassName="SharePost" syncable="YES">
+        <attribute name="authorId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPicUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couldBeDeleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hot" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isHaveSurvey" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSmsInform" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastCommentTimestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="locationAttached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="originalImageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="originalImageWidth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="place" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="surveyResultUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagNames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userIsAnswered" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Sku" representedClassName="Sku" syncable="YES">
+        <attribute name="allowMultiple" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="discountRate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="integral" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="salesPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="skuId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skuProp1" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="welfare" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Welfare" inverseName="skuList" inverseEntity="Welfare" syncable="YES"/>
+    </entity>
+    <entity name="Slogan" representedClassName="Slogan" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sloganId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SortOption" representedClassName="SortOption" syncable="YES">
+        <attribute name="optionId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="optionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optionValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="usageType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Store" representedClassName="Store" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandEngName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="storeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imageList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AlbumPhoto" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="changed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="highlight" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="part" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tagId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Upcoming" representedClassName="Upcoming" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contract" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="languageType" optional="YES" attributeType="Integer 32" defaultValueString="0">
+            <userInfo/>
+        </attribute>
+        <attribute name="likeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserCountry" representedClassName="UserCountry" syncable="YES">
+        <attribute name="cnName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0">
+            <userInfo/>
+        </attribute>
+    </entity>
+    <entity name="Video" representedClassName="Video" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="VideoPoster" representedClassName="VideoPoster" syncable="YES">
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Welfare" representedClassName="Welfare" syncable="YES">
+        <attribute name="brandEngName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandLogoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buyType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="buyTypeDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discountRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadPersonCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offersTips" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="overCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pTypeCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="salesPersonCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="salesPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="storeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imageList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AlbumPhoto" inverseName="welfare" inverseEntity="AlbumPhoto" syncable="YES"/>
+        <relationship name="salesUserList" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Alumni" inverseName="welfare" inverseEntity="Alumni" syncable="YES"/>
+        <relationship name="skuList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sku" inverseName="welfare" inverseEntity="Sku" syncable="YES"/>
+    </entity>
+    <entity name="Year" representedClassName="Year" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="yearId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AD" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="AlbumPhoto" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Alumni" positionX="0" positionY="0" width="128" height="870"/>
+        <element name="AlumniDetail" positionX="0" positionY="0" width="128" height="465"/>
+        <element name="AlumniFounder" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="AlumniWithMeLink" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="AttractiveAlumni" positionX="0" positionY="0" width="128" height="45"/>
+        <element name="Award" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Brand" positionX="0" positionY="0" width="128" height="330"/>
+        <element name="Chat" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="CheckedinItemId" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="CheckedinMember" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="ClassGroup" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="Club" positionX="0" positionY="0" width="128" height="405"/>
+        <element name="ClubDetail" positionX="0" positionY="0" width="128" height="495"/>
+        <element name="ClubSimple" positionX="0" positionY="0" width="128" height="240"/>
+        <element name="Comment" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="ComposerPlace" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="ComposerTag" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Country" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="CouponItem" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="Distance" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Event" positionX="0" positionY="0" width="128" height="960"/>
+        <element name="EventCheckinAlumni" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="EventCity" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="EventSignedUpAlumni" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="EventSponsor" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="EventTopic" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="EventWinner" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="FavoritedMember" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="FavoritedPost" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="FavoritedServiceItem" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="Feedback" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="FilterOption" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="HomeGroup" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Industry" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Invitee" positionX="0" positionY="0" width="128" height="300"/>
+        <element name="ItemGroup" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="ItemGroups" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="JoinedGroup" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="KnownAlumni" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="LikedItemId" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="Liker" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="Member" positionX="0" positionY="0" width="128" height="600"/>
+        <element name="Messages" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="NameCard" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="News" positionX="0" positionY="0" width="128" height="285"/>
+        <element name="Option" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="PhoneNumber" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Place" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="PointItem" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Post" positionX="0" positionY="0" width="128" height="720"/>
+        <element name="PostComment" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="RecommendAlumni" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="RecommendedItem" positionX="0" positionY="0" width="128" height="195"/>
+        <element name="ReferenceRelationship" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="RelationshipLink" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Report" positionX="0" positionY="0" width="128" height="195"/>
+        <element name="SearchKeyword" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="ServiceItem" positionX="0" positionY="0" width="128" height="885"/>
+        <element name="ServiceItemSection" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="ServiceItemSectionParam" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="ServiceProvider" positionX="0" positionY="0" width="128" height="405"/>
+        <element name="Shake" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="SharePost" positionX="0" positionY="0" width="128" height="630"/>
+        <element name="Sku" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Slogan" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="SortOption" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="Store" positionX="0" positionY="0" width="128" height="240"/>
+        <element name="Tag" positionX="0" positionY="0" width="128" height="225"/>
+        <element name="Upcoming" positionX="0" positionY="0" width="128" height="240"/>
+        <element name="UserCountry" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Video" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="VideoPoster" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Welfare" positionX="0" positionY="0" width="128" height="525"/>
+        <element name="Year" positionX="0" positionY="0" width="128" height="90"/>
+    </elements>
+</model>
