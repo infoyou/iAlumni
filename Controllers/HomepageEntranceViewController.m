@@ -211,10 +211,11 @@ enum {
     
     NSString *encodingImgUrlStr = [AppManager instance].userImgUrl;
     NSString *urlStr = [NSString stringWithFormat:@"%@&vipId=%@&name=%@&iconUrl=%@&class=%@&email=%@", HOME_EVENT_H5_URL, [AppManager instance].personId, [AppManager instance].userName, encodingImgUrlStr, [AppManager instance].className, [AppManager instance].email];
-    NSString *encodingStr = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSString *encodingStr = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     webVC.strTitle = LocaleStringForKey(NSTodoItemMsg, nil);
-    webVC.strUrl = encodingStr;
+//    webVC.strUrl = encodingStr;
+    webVC.strUrl = urlStr;
     
     [self.parentVC presentModalViewController:webViewNav
                                      animated:YES];

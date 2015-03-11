@@ -1012,13 +1012,13 @@
 
 - (void)doSendSupplyDemand
 {
-    [(SupplyDemandListViewController*)self.currentVC doSendSupplyDemand];
+    [(SupplyDemandListViewController *)self.currentVC doSendSupplyDemand];
 }
 
 #pragma mark - notify vc
 - (void)doBack
 {
-    [(UIWebViewController*)self.currentVC doBack];
+    [(UIWebViewController *)self.currentVC doBack];
 }
 
 - (void)doCloseNotifyEvent
@@ -1031,6 +1031,9 @@
     if ([self.eventWebVC.webView canGoBack]) {
         
         [self.eventWebVC.webView goBack];
+    } else {
+        
+        [self selectHomepage];
     }
 }
 

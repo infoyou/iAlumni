@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @protocol TabDelegate <NSObject>
 - (void)selectHomepage;
 - (void)selectAlumni;
@@ -22,6 +23,7 @@
 
 
 @interface TabBarView : UIView {
+    
   @private
   UIView *_selectedIndicator;
   
