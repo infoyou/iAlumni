@@ -576,9 +576,14 @@
 - (UIWebViewController *)goEventHtml5VC {
     self.navigationItem.title = LocaleStringForKey(NSEventTitle, nil);
     
+    NSString *userName = [AppManager instance].userName;
+    if (![AppManager instance].isLogin) {
+        userName = @"";
+    }
+    
     EventWebViewController *webVC = [[[EventWebViewController alloc] initWithNeedAdjustForiOS7:NO] autorelease];
     webVC.strTitle = LocaleStringForKey(NSTodoItemMsg, nil);
-    webVC.strUrl = [NSString stringWithFormat:@"%@&vipId=%@&name=%@&iconUrl=%@&class=%@&email=%@", EVENT_H5_URL, [AppManager instance].personId, [AppManager instance].userName, [AppManager instance].userImgUrl, [AppManager instance].className, [AppManager instance].email];
+    webVC.strUrl = [NSString stringWithFormat:@"%@&vipId=%@&name=%@&iconUrl=%@&class=%@&email=%@", EVENT_H5_URL, [AppManager instance].personId, userName, [AppManager instance].userImgUrl, [AppManager instance].className, [AppManager instance].email];
     
     [self arrangeCurrentVC:webVC];
     
