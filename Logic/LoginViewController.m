@@ -225,7 +225,7 @@ typedef enum {
                                                        roundedType:HAS_ROUNDED
                                                    imageEdgeInsert:ZERO_EDGE
                                                    titleEdgeInsert:ZERO_EDGE] autorelease];
-    
+    _followWechatButton.hidden = YES;
     [backView addSubview:_followWechatButton];
     
     // Version

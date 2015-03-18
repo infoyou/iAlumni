@@ -11,7 +11,7 @@
 #pragma mark - publish info
 #define APP_NAME                    @"iAlumni"
 #define PLATFORM                    @"iPhone"
-#define VERSION                     @"1.6.2"
+#define VERSION                     @"2.0.0"
 
 // 0,不需要; 1,需要
 #define IS_NEED_3RD_LOGIN           0
@@ -968,7 +968,7 @@ typedef enum {
 #define IOS4_2  4.2f
 #define EC_STATIC_INLINE	static inline
 #define HAS_CAMERA        [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]
-#define APP_STORE_URL               @"http://itunes.apple.com/us/app/ialumni/id543840943?ls=1&mt=8"
+#define APP_STORE_URL               @"https://itunes.apple.com/cn/app/ialumni/id543840943?mt=8"
 #define APP_INNER_DOWNLOAD_URL      @"http://weixun.co/ialumni"
 #define WECHAT_ITUNES_URL           @"https://itunes.apple.com/app/id414478124?mt=8&ls=1"
 #define CONFIGURABLE_DOWNLOAD_URL   @"%@event?action=page_load&page_name=alumni_app_download&locale=%@&channel=%d"

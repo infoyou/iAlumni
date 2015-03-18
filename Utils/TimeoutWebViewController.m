@@ -253,6 +253,7 @@ TOOLBAR,
             _sessionExpired = YES;
         }
     }
+    
 	return YES;
 }
 

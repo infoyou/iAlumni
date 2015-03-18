@@ -17,6 +17,9 @@
     UIWebView *_webView;
   
     BOOL _needAdjustForiOS7;
+    
+    BOOL preNeedBack;
+    BOOL needBack;
 }
 
 @property (nonatomic, retain) NSString *strUrl;

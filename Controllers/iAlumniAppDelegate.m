@@ -318,7 +318,6 @@ NSString *kLastShutdownFreeMemory = @"LastShutdownFreeMemory";						// the amoun
         
     } else {
         //    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/cn/app/ceibs-icampus/id486623316?mt=8"]];
-        
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/ceibs-icampus-for-iphone/id565005535?mt=8"]];
     }
 }

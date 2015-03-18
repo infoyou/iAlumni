@@ -45,6 +45,8 @@
 
 #define DOT_TAG             200
 
+#define FOOTER_HEIGHT     100.0f
+
 typedef enum{
     UPDATE_SOFT_TYPE = 0,
     CHANGE_AVTOR_TYPE,
@@ -797,6 +799,48 @@ enum {
     default:
       break;
   }
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    switch (section) {
+        case MORE_INFO_SEC:
+        return FOOTER_HEIGHT;
+        
+        default:
+        return 0.0f;
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    switch (section) {
+        
+        case MORE_INFO_SEC:
+        {
+            UIView *_footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, FOOTER_HEIGHT)];
+            _footerView.backgroundColor = TRANSPARENT_COLOR;
+            
+            WXWLabel *infoLabel = [[[WXWLabel alloc] initWithFrame:CGRectZero
+                                                         textColor:BASE_INFO_COLOR
+                                                       shadowColor:[UIColor blackColor]] autorelease];
+            infoLabel.font = BOLD_FONT(12);
+            infoLabel.text = [NSString stringWithFormat:@"协会帮提供支持"];
+            infoLabel.shadowColor = [UIColor clearColor];
+            [_footerView addSubview:infoLabel];
+            CGSize size = [infoLabel.text sizeWithFont:infoLabel.font
+                                     constrainedToSize:CGSizeMake(self.view.frame.size.width, CGFLOAT_MAX)
+                                         lineBreakMode:NSLineBreakByWordWrapping];
+            infoLabel.frame = CGRectMake((self.view.frame.size.width - size.width) / 2.0f,
+                                         FOOTER_HEIGHT - 60,
+                                         size.width, size.height);
+            
+            return _footerView;
+            
+        }
+        
+        default:
+        return nil;
+    }
 }
 
 #pragma mark - update cell

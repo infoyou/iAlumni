@@ -302,7 +302,7 @@ enum {
                                                    textColor:BASE_INFO_COLOR
                                                  shadowColor:[UIColor whiteColor]] autorelease];
         infoLabel.font = BOLD_FONT(12);
-        infoLabel.text = [NSString stringWithFormat:@"Copyright © 2013 Weixun Inc. All rights reserved."];
+        infoLabel.text = [NSString stringWithFormat:@"Copyright © 2015 Weixun Inc. All rights reserved."];
         [_footerView addSubview:infoLabel];
         CGSize size = [infoLabel.text sizeWithFont:infoLabel.font
                           constrainedToSize:CGSizeMake(self.view.frame.size.width, CGFLOAT_MAX)

@@ -31,8 +31,8 @@
 #define FOOTER_HEIGHT     100.0f
 
 enum {
-  WECHAT_SEC,
   COOP_LANG_SEC,
+    WECHAT_SEC,
 };
 
 enum {
@@ -58,7 +58,7 @@ enum {
 #define COOP_LANG_SEC_COUNT       2
 #define INFO_SEC_COUNT            4
 #define LOGOFF_SEC_COUNT          1
-#define SECTION_COUNT             6
+#define SECTION_COUNT             1
 
 #define DEFAULT_HEIGHT  44.0f
 

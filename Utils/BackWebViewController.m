@@ -143,10 +143,24 @@
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
     NSString *url = [[request URL] absoluteString];
     
+    NSLog(@"url = %@", url);
+    
     if (url && [url length] > 0) {
         if ([url rangeOfString:NO_PAGE_URL].length > 0) {
             _sessionExpired = YES;
         }
+        
+        
+        if ([url rangeOfString:@"http://wx.xiehuibang.cn:9004/HtmlApps/html/public/recruitZone/PubJobRecruitment.html"].length > 0) {
+            
+            NSLog(@"======PubJobRecruitment.html======");
+        }
+        
+        if ([url rangeOfString:@"http://wx.xiehuibang.cn:9004/HtmlApps/html/public/recruitZone/pubPublishResume.html"].length > 0) {
+            
+            NSLog(@"======pubPublishResume.html======");
+        }
+
     }
     
 	return YES;
@@ -158,6 +172,12 @@
         [AppManager instance].errDesc = LocaleStringForKey(NSSessionInvalidTitle, nil);
         [((iAlumniAppDelegate*)APP_DELEGATE) openLoginNeedDisplayError:YES];
     }
+    
+    if (needBack) {
+        needBack = NO;
+        [webView goBack];
+    }
+    
     [UIUtils closeActivityView];
 }
 
